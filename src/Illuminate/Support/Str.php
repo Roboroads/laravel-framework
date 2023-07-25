@@ -811,7 +811,7 @@ class Str
      * @param  int|null  $spaces  Include a minimal of N spaces, or null to not use them.
      * @return string
      */
-    public static function password($length = 32, $lowerCase = 1, $upperCase = 1, $numbers = 1, $symbols = 1, $spaces = null)
+    public static function password($length = 32, $lowerCase = 0, $upperCase = 0, $numbers = 0, $symbols = 0, $spaces = null)
     {
         $totalMinimalCharacters = ($lowerCase ?? 0)
             + ($upperCase ?? 0)
